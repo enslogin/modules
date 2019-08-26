@@ -6,8 +6,8 @@ module.exports = {
 	output:
 	{
 		path:          path.resolve(__dirname, "public"),
-		filename:      "enslogin-module-default.js",
-		library:       "enslogin-module-default",
+		filename:      "enslogin-module-metamask.js",
+		library:       "enslogin-module-metamask",
 		libraryTarget: "umd",
 	},
 	module: {
