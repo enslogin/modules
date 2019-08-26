@@ -4,11 +4,8 @@ window.provider = (config) => new Promise((resolve, reject) => {
 	const torus = new Torus.default();
 	torus.init()
 	.then(() => {
-		torus.setProvider(config.provider.network)
-		.then(() => {
-			resolve(torus.provider);
-		})
-	.catch(reject);
+		torus.setProvider(config.provider.network);
+		resolve(torus.provider);
 	})
 	.catch(reject);
 });
