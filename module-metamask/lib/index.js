@@ -6,4 +6,4 @@ window.provider = (config) => new Promise((resolve, reject) => {
 		: reject();
 	}
 	catch (e) { reject(); }
-})
+});
