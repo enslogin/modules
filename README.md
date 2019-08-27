@@ -1,4 +1,4 @@
-added QmTNZjNeyWzvNQ6Qq2JGaid72pkYntn7uTB99uTZu26kMX enslogin-module-default.js
-added QmV8AnvBoipWiPHpAcNNn8A2J7tQzvLzBWdvoR8RKKcCao enslogin-module-metamask.js
-added QmWVnhG3xV7ppF8LZ3HV9RsmneP5JfnbVDBLJmBJsfhP9L enslogin-module-portis.js
-added QmPcCcRkUxJu9wfyQn39NN66w4SCrBk9bKe7UDma1YDyE5 enslogin-module-torus.js
+added QmWt9oHySVLwGZPhitSZ1b62cZ7LVAKF1fc7JF654xj7bT enslogin-module-default.js
+added QmZA3iSz6xYhrBYmvfsturFJ42YMKdFb6xxU1TJF7z6g5y enslogin-module-metamask.js
+added QmNSoXezkcRUw64wCgbYSVaGJSvLSZeiBNjR1rmdDMw4iu enslogin-module-portis.js
+added QmeM5WiNbCVVyLy84dQHwz5B9gqyUwYQ7WRvfezsdjewhC enslogin-module-torus.js

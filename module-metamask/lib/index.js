@@ -1,4 +1,4 @@
-window.provider = (config) => new Promise((resolve, reject) => {
+global.provider = (config) => new Promise((resolve, reject) => {
 	try
 	{
 		window.ethereum.isMetaMask

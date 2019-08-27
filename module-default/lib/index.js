@@ -1,1 +1,1 @@
-window.provider = (config) => window.ethereum;
+global.provider = (config) => window.ethereum;
