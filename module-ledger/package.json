@@ -1,0 +1,23 @@
+{
+	"name": "@enslogin/module-ledger",
+	"version": "1.0.0",
+	"author": "hadrien croubois",
+	"license": "MIT",
+	"scripts": {
+		"bundle": "webpack",
+		"build":  "yarn bundle",
+		"clean":  "rm public/enslogin-module-ledger.js",
+		"export": "cp public/enslogin-module-ledger.js --"
+	},
+	"dependencies": {
+		"@ledgerhq/hw-transport-u2f": "^4.68.4",
+		"@ledgerhq/web3-subprovider": "^4.68.4",
+		"ethers": "^4.0.36",
+		"regenerator-runtime": "^0.13.3",
+		"web3-provider-engine": "^15.0.3"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"babel-loader": "^8.0.6"
+	}
+}
