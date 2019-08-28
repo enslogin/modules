@@ -1,5 +1,5 @@
-* QmQqqiuBjLKhSXd1CLLPkJVNMMgrEjcsrymSzv65yZXbMT enslogin-module-authereum.js
-* QmWfWVN3554G2fe44phMVjWqFZcnCa34ejrDsA8ebVWqMp enslogin-module-ledger.js
+* QmVahSzyGB55SAoanNuZDH4UVQoJDmu7zfbHuqt7xc9Z5j enslogin-module-authereum.js
+* QmdxaBhaS9kXB5YeovDjdURWRh173VowEyydctcgD1Gpwf enslogin-module-ledger.js
 * QmPTqM9nuYumAsZmsNHRJQkqZRTMsGcDqGSppPVjDj3BFa enslogin-module-metamask.js
 * QmNSoXezkcRUw64wCgbYSVaGJSvLSZeiBNjR1rmdDMw4iu enslogin-module-portis.js
-* Qmeyu21WycAwUkKGKpLJWCzL94RQfjgm3JKKdUHMYrQKiX enslogin-module-torus.js
+* QmebEADvb4ZYEB6bmQodjFZhL6UfUzWvP5fFisr7wM7Pt5 enslogin-module-torus.js

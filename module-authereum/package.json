@@ -10,8 +10,7 @@
     "export": "cp public/enslogin-module-authereum.js --"
   },
   "dependencies": {
-    "authereum": "0.0.3-beta.51",
-    "pump": "^3.0.0"
+    "authereum": "^0.0.3-beta.56"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
