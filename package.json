@@ -8,8 +8,8 @@
 		"module-*"
 	],
 	"scripts": {
-		"build":  "yarn wsrun build",
-		"clean":  "yarn wsrun clean",
+		"build": "yarn wsrun build",
+		"clean": "yarn wsrun clean",
 		"export": "mkdir -p $PWD/public && yarn wsrun export $PWD/public"
 	},
 	"dependencies": {

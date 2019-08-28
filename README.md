@@ -3,5 +3,6 @@ added QmPRQK88LzAHFZzD8yNfBttRfFSRzzVph1t1bszBR2ssDZ enslogin-module-ledger.js
 added QmZA3iSz6xYhrBYmvfsturFJ42YMKdFb6xxU1TJF7z6g5y enslogin-module-metamask.js
 added QmNSoXezkcRUw64wCgbYSVaGJSvLSZeiBNjR1rmdDMw4iu enslogin-module-portis.js
 added QmeM5WiNbCVVyLy84dQHwz5B9gqyUwYQ7WRvfezsdjewhC enslogin-module-torus.js
+added QmbTFvuS4frqR4uJEv2r4vdq3YUuL1FaRygsEvFN3wEmxY enslogin-module-authereum.js
 
 

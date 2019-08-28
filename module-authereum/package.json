@@ -1,0 +1,22 @@
+{
+	"name": "@enslogin/module-authereum",
+	"version": "1.0.0",
+	"author": "",
+	"license": "MIT",
+	"scripts": {
+		"bundle": "webpack",
+		"build": "yarn bundle",
+		"clean": "rm public/enslogin-module-authereum.js",
+		"export": "cp public/enslogin-module-authereum.js --"
+	},
+	"dependencies": {
+		"authereum": "0.0.3-beta.51",
+		"pump": "^3.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"babel-loader": "^8.0.6",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.7"
+	}
+}
