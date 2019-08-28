@@ -1,22 +1,22 @@
 {
-	"name": "@enslogin/modules",
-	"version": "1.0.0",
-	"author": "hadrien croubois",
-	"private": true,
-	"license": "MIT",
-	"workspaces": [
-		"module-*"
-	],
-	"scripts": {
-		"build": "yarn wsrun build",
-		"clean": "yarn wsrun clean",
-		"export": "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
-		"lint": "standard --fix **/lib/*.js"
-	},
-	"dependencies": {
-		"wsrun": "^5.0.0"
-	},
-	"devDependencies": {
-		"standard": "^14.0.2"
-	}
+  "name": "@enslogin/modules",
+  "version": "1.0.0",
+  "author": "hadrien croubois",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "module-*"
+  ],
+  "scripts": {
+    "build": "yarn wsrun build",
+    "clean": "yarn wsrun clean",
+    "export": "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
+    "lint": "standard --fix **/lib/*.js"
+  },
+  "dependencies": {
+    "wsrun": "^5.0.0"
+  },
+  "devDependencies": {
+    "standard": "^14.0.2"
+  }
 }
