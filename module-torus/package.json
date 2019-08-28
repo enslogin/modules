@@ -1,20 +1,20 @@
 {
-	"name": "@enslogin/module-torus",
-	"version": "1.0.0",
-	"author": "hadrien croubois",
-	"license": "MIT",
-	"scripts": {
-		"bundle": "webpack",
-		"build":  "yarn bundle",
-		"clean":  "rm public/enslogin-module-torus.js",
-		"export": "cp public/enslogin-module-torus.js --"
-	},
-	"dependencies": {
-		"@toruslabs/torus-embed": "^0.0.28",
-		"pump": "^3.0.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.5.5",
-		"babel-loader": "^8.0.6"
-	}
+  "name": "@enslogin/module-torus",
+  "version": "1.0.0",
+  "author": "hadrien croubois",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm public/enslogin-module-torus.js",
+    "export": "cp public/enslogin-module-torus.js --"
+  },
+  "dependencies": {
+    "@toruslabs/torus-embed": "^0.0.28",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "babel-loader": "^8.0.6"
+  }
 }
