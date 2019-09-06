@@ -1,8 +1,12 @@
 {
   "name": "@enslogin/module-portis",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "hadrien croubois",
   "license": "MIT",
+  "files": [
+    "/lib",
+    "/public"
+  ],
   "scripts": {
     "bundle": "webpack",
     "build":  "yarn bundle",
