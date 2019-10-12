@@ -14,13 +14,12 @@
     "export": "cp public/enslogin-module-authereum.js --"
   },
   "dependencies": {
-    "authereum": "^0.0.3-beta.56",
-    "toastr": "^2.1.4"
+    "authereum": "^0.0.4-beta.17"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
   }
 }

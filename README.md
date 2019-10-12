@@ -1,4 +1,4 @@
-* QmVahSzyGB55SAoanNuZDH4UVQoJDmu7zfbHuqt7xc9Z5j enslogin-module-authereum.js
+* QmddWQsgUuqjH7CNQNF1xUEs35nJfvdTHQXHs8vjQKPZKr enslogin-module-authereum.js
 * QmdxaBhaS9kXB5YeovDjdURWRh173VowEyydctcgD1Gpwf enslogin-module-ledger.js
 * QmPTqM9nuYumAsZmsNHRJQkqZRTMsGcDqGSppPVjDj3BFa enslogin-module-metamask.js
 * QmNSoXezkcRUw64wCgbYSVaGJSvLSZeiBNjR1rmdDMw4iu enslogin-module-portis.js
