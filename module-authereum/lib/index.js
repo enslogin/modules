@@ -1,9 +1,9 @@
-const { AuthereumProvider } = require('authereum')
+import Authereum from 'authereum'
 
 global.provider = (config) => new Promise((resolve, reject) => {
   try {
-    const provider = new AuthereumProvider(config.provider.network)
-    resolve(provider)
+    const authereum = new Authereum(config.provider.network)
+    resolve(authereum.getProvider())
   } catch (err) {
     reject(err)
   }
