@@ -1,6 +1,6 @@
 {
   "name": "@enslogin/module-authereum",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "hadrien croubois",
   "license": "MIT",
   "files": [
@@ -14,7 +14,7 @@
     "export": "cp public/enslogin-module-authereum.js --"
   },
   "dependencies": {
-    "authereum": "^0.0.3-beta.56",
+    "authereum": "^0.0.4-beta.17",
     "toastr": "^2.1.4"
   },
   "devDependencies": {
