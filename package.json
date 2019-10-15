@@ -8,10 +8,11 @@
     "module-*"
   ],
   "scripts": {
-    "build": "yarn wsrun build",
-    "clean": "yarn wsrun clean",
-    "export": "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
-    "lint": "standard --fix **/lib/*.js"
+    "publish": "yarn wsrun publish",
+    "build":   "yarn wsrun build",
+    "clean":   "yarn wsrun clean",
+    "export":  "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
+    "lint":    "standard --fix **/lib/*.js"
   },
   "dependencies": {
     "wsrun": "^5.0.2"

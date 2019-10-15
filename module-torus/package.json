@@ -8,10 +8,11 @@
     "/public"
   ],
   "scripts": {
-    "bundle": "webpack",
-    "build":  "yarn bundle",
-    "clean":  "rm -r public/*",
-    "export": "cp -r public/* --"
+    "publish": "npm publish",
+    "bundle":  "webpack",
+    "build":   "yarn bundle",
+    "clean":   "rm -r public/*",
+    "export":  "cp -r public/* --"
   },
   "dependencies": {
     "@toruslabs/torus-embed": "^0.0.28",
