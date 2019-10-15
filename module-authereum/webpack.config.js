@@ -5,7 +5,7 @@ module.exports = {
   entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'enslogin-module-authereum.js',
+    filename: 'enslogin-module-authereum/60/js',
     library: 'enslogin-module-authereum',
     libraryTarget: 'umd'
   },

@@ -1,6 +1,6 @@
 {
   "name": "@enslogin/module-ledger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "hadrien croubois",
   "license": "MIT",
   "files": [
@@ -10,8 +10,8 @@
   "scripts": {
     "bundle": "webpack",
     "build":  "yarn bundle",
-    "clean":  "rm public/enslogin-module-ledger.js",
-    "export": "cp public/enslogin-module-ledger.js --"
+    "clean":  "rm -r public/*",
+    "export": "cp -r public/* --"
   },
   "dependencies": {
     "@ledgerhq/hw-transport-u2f": "^4.68.4",

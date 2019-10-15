@@ -1,6 +1,6 @@
 {
   "name": "@enslogin/module-authereum",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "hadrien croubois",
   "license": "MIT",
   "files": [
@@ -10,8 +10,8 @@
   "scripts": {
     "bundle": "webpack",
     "build": "yarn bundle",
-    "clean": "rm public/enslogin-module-authereum.js",
-    "export": "cp public/enslogin-module-authereum.js --"
+    "clean": "rm -r public/*",
+    "export": "cp -r public/* --"
   },
   "dependencies": {
     "authereum": "^0.0.4-beta.17",

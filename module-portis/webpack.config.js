@@ -5,7 +5,7 @@ module.exports = {
   entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'enslogin-module-portis.js',
+    filename: 'enslogin-module-portis/60/js',
     library: 'enslogin-module-portis',
     libraryTarget: 'umd'
   },

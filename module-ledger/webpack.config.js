@@ -5,7 +5,7 @@ module.exports = {
   entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'enslogin-module-ledger.js',
+    filename: 'enslogin-module-ledger/60/js',
     library: 'enslogin-module-ledger',
     libraryTarget: 'umd'
   },

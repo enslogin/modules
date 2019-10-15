@@ -1,6 +1,6 @@
 {
   "name": "@enslogin/module-torus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "hadrien croubois",
   "license": "MIT",
   "files": [
@@ -9,9 +9,9 @@
   ],
   "scripts": {
     "bundle": "webpack",
-    "build": "yarn bundle",
-    "clean": "rm public/enslogin-module-torus.js",
-    "export": "cp public/enslogin-module-torus.js --"
+    "build":  "yarn bundle",
+    "clean":  "rm -r public/*",
+    "export": "cp -r public/* --"
   },
   "dependencies": {
     "@toruslabs/torus-embed": "^0.0.28",

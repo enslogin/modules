@@ -1,6 +1,6 @@
 {
   "name": "@enslogin/module-metamask",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "hadrien croubois",
   "license": "MIT",
   "files": [
@@ -10,8 +10,8 @@
   "scripts": {
     "bundle": "webpack",
     "build":  "yarn bundle",
-    "clean":  "rm public/enslogin-module-metamask.js",
-    "export": "cp public/enslogin-module-metamask.js --"
+    "clean":  "rm -r public/*",
+    "export": "cp -r public/* --"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

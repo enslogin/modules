@@ -5,7 +5,7 @@ module.exports = {
   entry: './lib/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'enslogin-module-torus.js',
+    filename: 'enslogin-module-torus/60/js',
     library: 'enslogin-module-torus',
     libraryTarget: 'umd'
   },
