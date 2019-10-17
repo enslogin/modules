@@ -99,6 +99,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {global.provider = config => new Promise((resolve, reject) => {
+  if (window.ethereum.autoRefreshOnNetworkChange) {
+    window.ethereum.autoRefreshOnNetworkChange = false;
+  }
+
   resolve(window.ethereum);
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(1)))

@@ -1,3 +1,7 @@
 global.provider = (config) => new Promise((resolve, reject) => {
-  resolve(window.ethereum)
+	if (window.ethereum.autoRefreshOnNetworkChange)
+	{
+		window.ethereum.autoRefreshOnNetworkChange = false;
+	}
+  resolve(window.ethereum);
 })
