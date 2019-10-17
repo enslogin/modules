@@ -9,22 +9,22 @@
   ],
   "scripts": {
     "publish": "npm publish",
-    "bundle":  "webpack",
-    "build":   "yarn bundle",
-    "clean":   "rm -r public/*",
-    "export":  "cp -r public/* --"
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm -r public/*",
+    "export": "cp -r public/* --"
   },
   "dependencies": {
-    "@ledgerhq/hw-transport-u2f": "^4.68.4",
-    "@ledgerhq/web3-subprovider": "^4.68.4",
-    "ethers": "^4.0.36",
+    "@ledgerhq/hw-transport-u2f": "^4.72.1",
+    "@ledgerhq/web3-subprovider": "^4.72.1",
+    "ethers": "^4.0.37",
     "regenerator-runtime": "^0.13.3",
     "web3-provider-engine": "^15.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.4",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   }
 }

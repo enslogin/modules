@@ -9,15 +9,15 @@
   ],
   "scripts": {
     "publish": "npm publish",
-    "bundle":  "webpack",
-    "build":   "yarn bundle",
-    "clean":   "rm -r public/*",
-    "export":  "cp -r public/* --"
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm -r public/*",
+    "export": "cp -r public/* --"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
+    "@babel/core": "^7.6.4",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   }
 }
