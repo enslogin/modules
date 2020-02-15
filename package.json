@@ -9,12 +9,13 @@
   ],
   "scripts": {
     "publish": "yarn wsrun publish",
-    "build":   "yarn wsrun build",
-    "clean":   "yarn wsrun clean",
-    "export":  "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
-    "lint":    "standard --fix **/lib/*.js"
+    "build": "yarn wsrun build",
+    "clean": "yarn wsrun clean",
+    "export": "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
+    "lint": "standard --fix **/lib/*.js"
   },
   "dependencies": {
+    "ethers": "^4.0.44",
     "wsrun": "^5.0.2"
   },
   "devDependencies": {
