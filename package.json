@@ -12,6 +12,7 @@
     "build": "yarn wsrun build",
     "clean": "yarn wsrun clean",
     "export": "mkdir -p $PWD/public && yarn wsrun export $PWD/public",
+		"deploy-all": "find $PWD/public -mindepth 1 -maxdepth 1 -exec ipfs-deploy -O -p pinata {} \;",
     "lint": "standard --fix **/lib/*.js"
   },
   "dependencies": {

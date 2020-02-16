@@ -14,12 +14,13 @@ const entries = [
 	{ ipfs: 'ipfs://QmZgEymu2FyBYcbiJwuhYmFWXniYjcCFSNPrbqTm3V8sBF', domain: 'metamask.enslogin.eth'  },
 	{ ipfs: 'ipfs://QmQh8QXWYhZNPUA2btWtvrC9G5vTocbKJDHGUiw2rnwp1V', domain: 'portis.enslogin.eth'    },
 	{ ipfs: 'ipfs://QmQNgtUkYT44VcPfWRthAG16XfKjmwsV9Wtn5kzTBQBhMD', domain: 'torus.enslogin.eth'     },
+	{ ipfs: 'ipfs://QmdcfQSsUJUTE21CCn6biXDdivMu9aBUjPGJRcgiy8beud', domain: 'unilogin.enslogin.eth'  },
 	// { ipfs: 'http://127.0.0.1/enslogin/enslogin-module-authereum', domain: 'authereum.enslogin.eth' },
 	// { ipfs: 'http://127.0.0.1/enslogin/enslogin-module-ledger',    domain: 'ledger.enslogin.eth'    },
 	// { ipfs: 'http://127.0.0.1/enslogin/enslogin-module-metamask',  domain: 'metamask.enslogin.eth'  },
 	// { ipfs: 'http://127.0.0.1/enslogin/enslogin-module-portis',    domain: 'portis.enslogin.eth'    },
 	// { ipfs: 'http://127.0.0.1/enslogin/enslogin-module-torus',     domain: 'torus.enslogin.eth'     },
-	{ ipfs: 'http://127.0.0.1/enslogin/enslogin-module-unilogin',  domain: 'unilogin.enslogin.eth'  },
+	// { ipfs: 'http://127.0.0.1/enslogin/enslogin-module-unilogin',  domain: 'unilogin.enslogin.eth'  },
 ];
 
 const keys = [

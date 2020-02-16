@@ -1,5 +1,6 @@
-* QmVahSzyGB55SAoanNuZDH4UVQoJDmu7zfbHuqt7xc9Z5j enslogin-module-authereum.js
-* QmdxaBhaS9kXB5YeovDjdURWRh173VowEyydctcgD1Gpwf enslogin-module-ledger.js
-* QmPTqM9nuYumAsZmsNHRJQkqZRTMsGcDqGSppPVjDj3BFa enslogin-module-metamask.js
-* QmNSoXezkcRUw64wCgbYSVaGJSvLSZeiBNjR1rmdDMw4iu enslogin-module-portis.js
-* QmebEADvb4ZYEB6bmQodjFZhL6UfUzWvP5fFisr7wM7Pt5 enslogin-module-torus.js
+* QmVahSzyGB55SAoanNuZDH4UVQoJDmu7zfbHuqt7xc9Z5j/60/js authereum
+* QmdxaBhaS9kXB5YeovDjdURWRh173VowEyydctcgD1Gpwf/60/js ledger
+* QmPTqM9nuYumAsZmsNHRJQkqZRTMsGcDqGSppPVjDj3BFa/60/js metamask
+* QmNSoXezkcRUw64wCgbYSVaGJSvLSZeiBNjR1rmdDMw4iu/60/js portis
+* QmebEADvb4ZYEB6bmQodjFZhL6UfUzWvP5fFisr7wM7Pt5/60/js torus
+* QmdcfQSsUJUTE21CCn6biXDdivMu9aBUjPGJRcgiy8beud/60/js unilogin
