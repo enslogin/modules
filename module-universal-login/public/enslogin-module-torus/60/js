@@ -1,0 +1,715 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["enslogin-module-torus"] = factory();
+	else
+		root["enslogin-module-torus"] = factory();
+})(window, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {const ULIframeProvider = __webpack_require__(2);
+
+global.provider = config => new Promise((resolve, reject) => {
+  // config.provider.network
+  const provider = ULIframeProvider.createPicker();
+  resolve(provider);
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+var g; // This works in non-strict mode
+
+g = function () {
+  return this;
+}();
+
+try {
+  // This works if eval is allowed (see CSP)
+  g = g || new Function("return this")();
+} catch (e) {
+  // This works if the window reference is available
+  if (typeof window === "object") g = window;
+} // g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+
+module.exports = g;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function (t, n) {
+   true ? module.exports = n() : undefined;
+}(this, function () {
+  "use strict";
+
+  function t(t, n) {
+    var e,
+        r,
+        o,
+        i,
+        s = {
+      label: 0,
+      sent: function () {
+        if (1 & o[0]) throw o[1];
+        return o[1];
+      },
+      trys: [],
+      ops: []
+    };
+    return i = {
+      next: u(0),
+      throw: u(1),
+      return: u(2)
+    }, "function" == typeof Symbol && (i[Symbol.iterator] = function () {
+      return this;
+    }), i;
+
+    function u(i) {
+      return function (u) {
+        return function (i) {
+          if (e) throw new TypeError("Generator is already executing.");
+
+          for (; s;) try {
+            if (e = 1, r && (o = 2 & i[0] ? r.return : i[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, i[1])).done) return o;
+
+            switch (r = 0, o && (i = [2 & i[0], o.value]), i[0]) {
+              case 0:
+              case 1:
+                o = i;
+                break;
+
+              case 4:
+                return s.label++, {
+                  value: i[1],
+                  done: !1
+                };
+
+              case 5:
+                s.label++, r = i[1], i = [0];
+                continue;
+
+              case 7:
+                i = s.ops.pop(), s.trys.pop();
+                continue;
+
+              default:
+                if (!(o = (o = s.trys).length > 0 && o[o.length - 1]) && (6 === i[0] || 2 === i[0])) {
+                  s = 0;
+                  continue;
+                }
+
+                if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
+                  s.label = i[1];
+                  break;
+                }
+
+                if (6 === i[0] && s.label < o[1]) {
+                  s.label = o[1], o = i;
+                  break;
+                }
+
+                if (o && s.label < o[2]) {
+                  s.label = o[2], s.ops.push(i);
+                  break;
+                }
+
+                o[2] && s.ops.pop(), s.trys.pop();
+                continue;
+            }
+
+            i = n.call(t, s);
+          } catch (t) {
+            i = [6, t], r = 0;
+          } finally {
+            e = o = 0;
+          }
+
+          if (5 & i[0]) throw i[1];
+          return {
+            value: i[0] ? i[1] : void 0,
+            done: !0
+          };
+        }([i, u]);
+      };
+    }
+  }
+
+  var n,
+      e = {
+    error: function (t) {
+      return {
+        error: t
+      };
+    },
+    ok: function (t) {
+      return {
+        ok: t
+      };
+    },
+    isError: function (t) {
+      return Object.hasOwnProperty.call(t, "error");
+    },
+    isOk: function (t) {
+      return Object.hasOwnProperty.call(t, "ok");
+    }
+  },
+      r = function (t) {
+    return function (n, r) {
+      return n === t ? e.ok(t) : e.error([{
+        path: r,
+        expected: "exactly " + JSON.stringify(t)
+      }]);
+    };
+  },
+      o = /^-?\d*(\.\d+)?$/,
+      i = function (t, n) {
+    return function (t) {
+      return "number" == typeof t && !isNaN(t);
+    }(t) ? e.ok(t) : function (t) {
+      return "string" == typeof t && "" !== t && o.test(t);
+    }(t) ? e.ok(+t) : e.error([{
+      path: n,
+      expected: "number"
+    }]);
+  },
+      s = function (t) {
+    return function (n, r) {
+      if ("object" != typeof n || null === n) return e.error([{
+        path: r,
+        expected: "object"
+      }]);
+      var o = {},
+          i = [];
+
+      for (var s in t) if (Object.hasOwnProperty.call(t, s)) {
+        var u = t[s](n[s], r + "." + s);
+        e.isOk(u) ? o[s] = u.ok : i.push.apply(i, u.error);
+      }
+
+      return i.length > 0 ? e.error(i) : e.ok(o);
+    };
+  },
+      u = function (t) {
+    return function (n, r) {
+      return null == n ? e.ok(void 0) : t(n, r);
+    };
+  },
+      a = (n = function (t, e) {
+    return (n = Object.setPrototypeOf || {
+      __proto__: []
+    } instanceof Array && function (t, n) {
+      t.__proto__ = n;
+    } || function (t, n) {
+      for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+    })(t, e);
+  }, function (t, e) {
+    function r() {
+      this.constructor = t;
+    }
+
+    n(t, e), t.prototype = null === e ? Object.create(e) : (r.prototype = e.prototype, new r());
+  });
+
+  !function (t) {
+    function n(e) {
+      var r = t.call(this, "Cannot cast") || this;
+      return r.errors = e, Object.setPrototypeOf(r, n.prototype), r;
+    }
+
+    a(n, t);
+  }(TypeError);
+
+  var c,
+      f,
+      l = function () {
+    function t(t, n) {
+      this.sendMessage = t, this.handler = n, this.nextId = 0, this.callbacks = {};
+    }
+
+    return t.prototype.handleMessage = function (t) {
+      var n = function (t, n, r) {
+        var o = n(t, "");
+        return e.isOk(o) ? o.ok : r;
+      }(t, p, void 0);
+
+      n && this.handleRpc(n);
+    }, t.prototype.send = function (t, n) {
+      var e = this.getId();
+      this.callbacks[e] = n, this.sendRpc({
+        protocolId: "UNIVERSAL_LOGIN",
+        id: e,
+        isRequest: !0,
+        payload: t
+      });
+    }, t.prototype.getId = function () {
+      return this.nextId++;
+    }, t.prototype.handleRpc = function (t) {
+      t.isRequest ? this.handleRequest(t) : this.handleResponse(t);
+    }, t.prototype.handleResponse = function (t) {
+      var n,
+          e,
+          r = this.callbacks[t.id];
+      delete this.callbacks[t.id], void 0 !== t.error ? null === (n = r) || void 0 === n || n(t.error, void 0) : null === (e = r) || void 0 === e || e(null, t.response);
+    }, t.prototype.handleRequest = function (t) {
+      this.handler(t.payload, this.getCallbackHandler(t.id));
+    }, t.prototype.getCallbackHandler = function (t) {
+      var n = this;
+      return function (e, r) {
+        e ? n.sendRpc({
+          protocolId: "UNIVERSAL_LOGIN",
+          id: t,
+          isRequest: !1,
+          error: e
+        }) : n.sendRpc({
+          protocolId: "UNIVERSAL_LOGIN",
+          id: t,
+          isRequest: !1,
+          response: r
+        });
+      };
+    }, t.prototype.sendRpc = function (t) {
+      this.sendMessage(t);
+    }, t;
+  }(),
+      p = (c = [s({
+    protocolId: r("UNIVERSAL_LOGIN"),
+    id: i,
+    isRequest: r(!0),
+    payload: e.ok
+  }), s({
+    protocolId: r("UNIVERSAL_LOGIN"),
+    id: i,
+    isRequest: r(!1),
+    error: u(e.ok),
+    response: u(e.ok)
+  })], f = "RpcMessage", function (t, n) {
+    if (0 === c.length) return e.ok(t);
+
+    for (var r = 0, o = c; r < o.length; r++) {
+      var i = (0, o[r])(t, n);
+      if (e.isOk(i)) return i;
+    }
+
+    return e.error([{
+      path: n,
+      expected: f
+    }]);
+  }),
+      d = {
+    backendUrl: "https://universal-provider-backend.netlify.com",
+    logoUrl: "https://universalloginsdk.readthedocs.io/en/latest/_images/logo.png",
+    ulButtonId: "unilogin-button"
+  };
+
+  var h = function () {
+    function t() {}
+
+    return t.prototype.pipe = function () {
+      for (var t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
+
+      return t.reduce(function (t, n) {
+        return n(t);
+      }, this);
+    }, t;
+  }(),
+      y = function () {
+    var t = function (n, e) {
+      return (t = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function (t, n) {
+        t.__proto__ = n;
+      } || function (t, n) {
+        for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+      })(n, e);
+    };
+
+    return function (n, e) {
+      function r() {
+        this.constructor = n;
+      }
+
+      t(n, e), n.prototype = null === e ? Object.create(e) : (r.prototype = e.prototype, new r());
+    };
+  }(),
+      b = function (t) {
+    function n(n) {
+      var e = t.call(this) || this;
+      return e.subscribers = new Set(), e.value = n, e;
+    }
+
+    return y(n, t), n.prototype.get = function () {
+      return this.value;
+    }, n.prototype.set = function (t) {
+      this.value = t, this.subscribers.forEach(function (t) {
+        return t();
+      });
+    }, n.prototype.subscribe = function (t) {
+      var n = this;
+      return this.subscribers.add(t), function () {
+        return n.subscribers.delete(t);
+      };
+    }, n;
+  }(h);
+
+  (function () {
+    var t = function (n, e) {
+      return (t = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function (t, n) {
+        t.__proto__ = n;
+      } || function (t, n) {
+        for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+      })(n, e);
+    };
+  })(), function () {
+    var t = function (n, e) {
+      return (t = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function (t, n) {
+        t.__proto__ = n;
+      } || function (t, n) {
+        for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+      })(n, e);
+    };
+  }();
+  (function () {
+    var t = function (n, e) {
+      return (t = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function (t, n) {
+        t.__proto__ = n;
+      } || function (t, n) {
+        for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+      })(n, e);
+    };
+  })(), function () {
+    var t = function (n, e) {
+      return (t = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function (t, n) {
+        t.__proto__ = n;
+      } || function (t, n) {
+        for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+      })(n, e);
+    };
+  }(), function () {
+    var t = function (n, e) {
+      return (t = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function (t, n) {
+        t.__proto__ = n;
+      } || function (t, n) {
+        for (var e in n) n.hasOwnProperty(e) && (t[e] = n[e]);
+      })(n, e);
+    };
+  }();
+
+  var v = function () {
+    var t = _(),
+        n = document.URL;
+
+    return t ? n + t : null;
+  },
+      _ = function () {
+    for (var t, n = document.getElementsByTagName("link"), e = 0; e < n.length; e++) "icon" !== n[e].getAttribute("rel") && "shortcut icon" !== n[e].getAttribute("rel") || (t = n[e].getAttribute("href"));
+
+    return t;
+  };
+
+  function g(t, n, e) {
+    return t + "?" + (r = {
+      applicationInfo: JSON.stringify(n),
+      picker: e
+    }, Object.entries(r).map(function (t) {
+      var n = function (t, n) {
+        var e = "function" == typeof Symbol && t[Symbol.iterator];
+        if (!e) return t;
+        var r,
+            o,
+            i = e.call(t),
+            s = [];
+
+        try {
+          for (; (void 0 === n || n-- > 0) && !(r = i.next()).done;) s.push(r.value);
+        } catch (t) {
+          o = {
+            error: t
+          };
+        } finally {
+          try {
+            r && !r.done && (e = i.return) && e.call(i);
+          } finally {
+            if (o) throw o.error;
+          }
+        }
+
+        return s;
+      }(t, 2),
+          e = n[0],
+          r = n[1];
+
+      return encodeURIComponent(e) + "=" + encodeURIComponent(r.toString());
+    }).join("&"));
+    var r;
+  }
+
+  return function () {
+    function n(t, n, e) {
+      var r = this;
+      void 0 === n && (n = d), void 0 === e && (e = !1), this.upstream = t, this.config = n, this.isReady = new b(!1), this.isUniLogin = !0, this.boundOpenDashboard = this.openDashboard.bind(this);
+      var o,
+          i,
+          s = {
+        applicationName: document.title,
+        logo: v(),
+        type: "laptop"
+      },
+          u = g(n.backendUrl, s, e);
+      this.iframe = (o = u, i = document.createElement("iframe"), Object.assign(i.style, {
+        position: "fixed",
+        width: "100vw",
+        height: "100vh",
+        left: "0",
+        top: "0",
+        background: "none transparent",
+        border: "none",
+        display: "none"
+      }), i.setAttribute("src", o), document.getElementsByTagName("body")[0].appendChild(i), i), this.bridge = new l(function (t) {
+        return r.iframe.contentWindow.postMessage(t, "*");
+      }, this.handleRpc.bind(this)), window.addEventListener("message", function (t) {
+        return r.bridge.handleMessage(t.data);
+      }), this.observeDomForUlButtons();
+    }
+
+    return n.prototype.observeDomForUlButtons = function () {
+      var t = this;
+      new MutationObserver(function (n) {
+        var e, r;
+
+        try {
+          for (var o = function (t) {
+            var n = "function" == typeof Symbol && t[Symbol.iterator],
+                e = 0;
+            return n ? n.call(t) : {
+              next: function () {
+                return t && e >= t.length && (t = void 0), {
+                  value: t && t[e++],
+                  done: !t
+                };
+              }
+            };
+          }(n), i = o.next(); !i.done; i = o.next()) {
+            var s = i.value;
+            s.target instanceof Element && s.target.querySelectorAll("button#" + t.config.ulButtonId).forEach(function (n) {
+              n instanceof HTMLButtonElement && t.initUlButton(n);
+            });
+          }
+        } catch (t) {
+          e = {
+            error: t
+          };
+        } finally {
+          try {
+            i && !i.done && (r = o.return) && r.call(o);
+          } finally {
+            if (e) throw e.error;
+          }
+        }
+      }).observe(document.body, {
+        childList: !0,
+        subtree: !0
+      });
+    }, n.prototype.handleRpc = function (t, n) {
+      switch (t.method) {
+        case "ul_set_iframe_visibility":
+          this.setIframeVisibility(t.params[0]);
+          break;
+
+        case "ul_ready":
+          this.isReady.set(!0);
+          break;
+
+        default:
+          this.sendUpstream(t, n);
+      }
+    }, n.prototype.sendUpstream = function (t, n) {
+      this.upstream.sendAsync ? this.upstream.sendAsync(t, n) : this.upstream.send(t, n);
+    }, n.prototype.setIframeVisibility = function (t) {
+      this.iframe.style.display = t ? "unset" : "none";
+    }, n.create = function (t, e) {
+      return void 0 === e && (e = d), new n(t, e);
+    }, n.createPicker = function (t, e) {
+      return void 0 === e && (e = d), new n(t, e, !0);
+    }, n.prototype.send = function (n, e) {
+      return r = this, o = void 0, s = function () {
+        return t(this, function (t) {
+          switch (t.label) {
+            case 0:
+              return [4, this.isReady.pipe((r = Boolean, function (t) {
+                return new Promise(function (n) {
+                  return t.pipe((e = function (t) {
+                    r(t) && n(t);
+                  }, function (t) {
+                    return e(t.get()), t.subscribe(function () {
+                      return e(t.get());
+                    });
+                  }));
+                  var e;
+                });
+              }))];
+
+            case 1:
+              return t.sent(), this.bridge.send(n, e), [2];
+          }
+
+          var r;
+        });
+      }, new ((i = void 0) || (i = Promise))(function (t, n) {
+        function e(t) {
+          try {
+            a(s.next(t));
+          } catch (t) {
+            n(t);
+          }
+        }
+
+        function u(t) {
+          try {
+            a(s.throw(t));
+          } catch (t) {
+            n(t);
+          }
+        }
+
+        function a(n) {
+          n.done ? t(n.value) : new i(function (t) {
+            t(n.value);
+          }).then(e, u);
+        }
+
+        a((s = s.apply(r, o || [])).next());
+      });
+      var r, o, i, s;
+    }, n.prototype.setDashboardVisibility = function (t) {
+      this.send({
+        method: "ul_set_dashboard_visibility",
+        params: [t]
+      }, function () {});
+    }, n.prototype.openDashboard = function () {
+      this.setDashboardVisibility(!0);
+    }, n.prototype.closeDashboard = function () {
+      this.setDashboardVisibility(!1);
+    }, n.prototype.initUlButton = function (t) {
+      Object.assign(t.style, {
+        display: "inline-block",
+        background: "none",
+        border: "none",
+        cursor: "pointer",
+        position: "relative",
+        width: "60px",
+        height: "60px"
+      }), t.innerHTML = '\n      <img src="' + this.config.logoUrl + '" alt="U" >\n    ', t.addEventListener("click", this.boundOpenDashboard);
+    }, n;
+  }();
+});
+
+/***/ })
+/******/ ]);
+});

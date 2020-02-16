@@ -1,0 +1,26 @@
+{
+  "name": "@enslogin/module-unilogin",
+  "version": "0.0.1",
+  "author": "hadrien croubois",
+  "license": "MIT",
+  "files": [
+    "/lib",
+    "/public"
+  ],
+  "scripts": {
+    "publish": "npm publish",
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm -r public/*",
+    "export": "cp -r public/* --"
+  },
+  "dependencies": {
+    "@universal-login/provider": "^0.5.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
