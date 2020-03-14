@@ -2,19 +2,18 @@
 
 CMD="ethers-ens --account $MNEMONIC --yes --wait"
 DEPLOYER="ipfs-deploy -O -p pinata"
-NETWORKS=('ropsten')
-KEYS=('enslogin' 'enslogin-default')
+NETWORKS=("ropsten" "rinkeby" "goerli")
+KEYS=("enslogin" "enslogin-default")
 
-for network in "${NETWORKS[@]}";
+for module in `ls public`;
 do
-	for module in `ls public`;
+	ipfshash=`$DEPLOYER public/$module 2> /dev/null`
+
+	for network in "${NETWORKS[@]}";
 	do
-
-		ipfshash=$($DEPLOYER public/$module 2> /dev/null)
-
 		for key in "${KEYS[@]}";
 		do
-			echo -n "[$network|$module.enslogin.eth] $key → ipfs://$ipfshash ..."
+			echo -n "[$network|$module.enslogin.eth] $key → ipfs://$ipfshash ... "
 
 			lookup=`$CMD --network $network lookup $module.enslogin.eth`
 			ctrl=`grep Controller <<< $lookup | tr -s ' ' | cut -d' ' -f3`
