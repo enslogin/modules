@@ -1,0 +1,30 @@
+{
+  "name": "@enslogin/module-ledger",
+  "version": "0.0.2",
+  "author": "hadrien croubois",
+  "license": "MIT",
+  "files": [
+    "/lib",
+    "/public"
+  ],
+  "scripts": {
+    "publish": "npm publish",
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm -r public/*",
+    "export": "cp -r public/* --"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-transport-u2f": "^5.11.0",
+    "@ledgerhq/web3-subprovider": "^5.11.0",
+    "ethers": "^4.0.45",
+    "regenerator-runtime": "^0.13.5",
+    "web3-provider-engine": "^15.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
