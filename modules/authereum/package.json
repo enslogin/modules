@@ -15,7 +15,7 @@
     "export": "cp -r public/* --"
   },
   "dependencies": {
-    "authereum": "^0.0.4-beta.121",
+    "authereum": "^0.0.4-beta.127",
     "toastr": "^2.1.4"
   },
   "devDependencies": {

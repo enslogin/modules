@@ -15,7 +15,7 @@
     "export": "cp -r public/* --"
   },
   "dependencies": {
-    "@unilogin/provider": "^0.5.17"
+    "@unilogin/provider": "^0.5.18"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
