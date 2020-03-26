@@ -15203,9 +15203,10 @@ class Authereum extends eventemitter3_1.default {
       }));
     });
 
-    this.getRpcUri = () => {
+    this.getRpcUri = () => __awaiter(this, void 0, void 0, function* () {
+      yield this._tilReady();
       return this.rpcUri;
-    };
+    });
 
     this.getNetworkId = () => __awaiter(this, void 0, void 0, function* () {
       return this._handleError(this._postMessageToChild({
@@ -15428,7 +15429,7 @@ class Authereum extends eventemitter3_1.default {
         let timedout = false;
         const timer = setTimeout(() => {
           timedout = true;
-        }, 1e3);
+        }, 5e3);
 
         this._postMessageToChild({
           method: 'ping'
@@ -15498,8 +15499,6 @@ class Authereum extends eventemitter3_1.default {
 
         switch (method) {
           case 'onError':
-            // TODO: button with link in toaster
-            // window.open('https://support.authereum.com/hc/en-us/articles/360036310154-How-can-I-enable-cookies-')
             const err = params;
             this.emit('error', err);
             this.notifier.notify({
@@ -15790,6 +15789,16 @@ class Authereum extends eventemitter3_1.default {
 
           child.close();
           child.close();
+
+          if (result.success) {
+            this._logAnalyticsEvent({
+              eventType: 'logged_in_dapp',
+              properties: {
+                dapp_url: window.location.href
+              }
+            });
+          }
+
           resolve(result);
         };
 
@@ -15841,7 +15850,8 @@ class Authereum extends eventemitter3_1.default {
           document.addEventListener('DOMContentLoaded', () => resolve());
         }
       });
-    });
+    }); // keep both static and normal version methods
+
 
     this.version = () => {
       return version_1.default;
@@ -15882,6 +15892,13 @@ class Authereum extends eventemitter3_1.default {
       return this._postMessageToChild({
         method: 'loadSigningKey',
         params: signingKey
+      });
+    });
+
+    this._logAnalyticsEvent = input => __awaiter(this, void 0, void 0, function* () {
+      return this._postMessageToChild({
+        method: 'logAnalyticsEvent',
+        params: input
       });
     });
 
@@ -15961,7 +15978,11 @@ class Authereum extends eventemitter3_1.default {
 
 }
 
-exports.default = Authereum;
+exports.default = Authereum; // keep both static and normal version methods
+
+Authereum.version = () => {
+  return version_1.default;
+};
 
 if (typeof window !== 'undefined') {
   window.Authereum = Authereum;
@@ -37895,7 +37916,7 @@ function intToHex(i) {
 
       Object.defineProperty(r, "__esModule", {
         value: !0
-      }), r.version = "4.0.45";
+      }), r.version = "4.0.46";
     }, {}],
     2: [function (e, t, r) {
       "use strict";
@@ -43423,8 +43444,7 @@ function intToHex(i) {
             });
 
           case "getBlock":
-            if (t.blockTag) return n += "/api?module=proxy&action=eth_getBlockByNumber&tag=" + t.blockTag, t.includeTransactions ? n += "&boolean=true" : n += "&boolean=false", o(n += i);
-            throw new Error("getBlock by blockHash not implmeneted");
+            return t.blockTag ? (n += "/api?module=proxy&action=eth_getBlockByNumber&tag=" + t.blockTag, t.includeTransactions ? n += "&boolean=true" : n += "&boolean=false", o(n += i)) : Promise.reject(new Error("getBlock by blockHash not implemeneted"));
 
           case "getTransaction":
             return n += "/api?module=proxy&action=eth_getTransactionByHash&txhash=" + t.transactionHash, o(n += i);
@@ -43433,8 +43453,7 @@ function intToHex(i) {
             return n += "/api?module=proxy&action=eth_getTransactionReceipt&txhash=" + t.transactionHash, o(n += i);
 
           case "call":
-            if (n += "/api?module=proxy&action=eth_call" + (s = (s = f(t.transaction)) && "&" + s), "latest" !== t.blockTag) throw new Error("EtherscanProvider does not support blockTag for call");
-            return o(n += i);
+            return n += "/api?module=proxy&action=eth_call" + (s = (s = f(t.transaction)) && "&" + s), "latest" !== t.blockTag ? Promise.reject(new Error("EtherscanProvider does not support blockTag for call")) : o(n += i);
 
           case "estimateGas":
             var s;
@@ -48847,7 +48866,7 @@ module.exports = function isBuffer(obj) {
 /* 241 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"authereum\",\"version\":\"0.0.4-beta.127\",\"description\":\"Authereum library\",\"main\":\"dist/index.js\",\"types\":\"types/index.d.ts\",\"scripts\":{\"test\":\"jest\",\"dev\":\"npm run copy:packagejson && tsc --watch\",\"build\":\"npm run copy:packagejson && npm run build:ts && npm run build:browser\",\"build:ts\":\"tsc\",\"build:browser\":\"browserify -t [ babelify ] dist/index.js | uglifyjs > authereum.js\",\"clean\":\"rm -rf dist\",\"copy:packagejson\":\"cp package.json src/package.json\",\"lint\":\"tslint --fix -c tslint.json src/*.ts src/**/*.ts src/**/**.ts\",\"publish-module\":\"npm publish --tag beta --access public\",\"dist-tag\":\"npm dist-tag add \\\"authereum@$(jq -r .version <package.json)\\\" latest\",\"bump\":\"lerna-sync-version\",\"release\":\"npm run clean && npm test && npm run publish-module\",\"release-dist\":\"npm run release && npm run dist-tag\",\"bump-release\":\"npm run bump && npm run release\",\"prepare\":\"npm run lint && npm run build\"},\"directories\":{},\"author\":\"\",\"license\":\"MIT\",\"dependencies\":{\"async\":\"^3.1.0\",\"ethereum-private-key-to-address\":\"0.0.3\",\"ethers\":\"^4.0.36\",\"eventemitter3\":\"^4.0.0\",\"is-buffer\":\"^2.0.4\",\"moment\":\"^2.24.0\",\"penpal\":\"^4.1.1\",\"pify\":\"^4.0.1\",\"querystring\":\"^0.2.0\",\"rollup-plugin-commonjs\":\"^10.1.0\",\"store\":\"^2.0.12\",\"to-hex\":\"0.0.11\",\"uuidv4\":\"^6.0.6\",\"web3-provider-engine\":\"^15.0.4\",\"web3-utils\":\"^1.2.1\"},\"devDependencies\":{\"@babel/cli\":\"^7.7.0\",\"@babel/core\":\"^7.7.2\",\"@babel/node\":\"^7.7.0\",\"@babel/plugin-transform-arrow-functions\":\"^7.2.0\",\"@babel/plugin-transform-runtime\":\"^7.6.2\",\"@babel/preset-env\":\"^7.8.3\",\"@babel/runtime\":\"^7.7.2\",\"@types/jest\":\"^24.0.15\",\"@types/node\":\"^12.11.7\",\"@typescript-eslint/eslint-plugin\":\"^1.9.0\",\"@typescript-eslint/parser\":\"^1.9.0\",\"babelify\":\"^10.0.0\",\"browserify\":\"^16.5.0\",\"jest\":\"^24.8.0\",\"lerna-sync-version\":\"0.0.3\",\"standard\":\"^12.0.1\",\"ts-jest\":\"^24.0.2\",\"tsc\":\"^1.20150623.0\",\"tsify\":\"^4.0.1\",\"tslint\":\"^5.18.0\",\"tslint-config-standard\":\"^8.0.1\",\"typescript\":\"^3.7.2\",\"uglify-es\":\"^3.3.9\",\"web3\":\"^1.2.1\"},\"standard\":{\"parser\":\"@typescript-eslint/parser\",\"plugins\":[\"@typescript-eslint/eslint-plugin\"]}}");
+module.exports = JSON.parse("{\"name\":\"authereum\",\"version\":\"0.0.4-beta.129\",\"description\":\"Authereum library\",\"main\":\"dist/index.js\",\"types\":\"types/index.d.ts\",\"scripts\":{\"test\":\"jest\",\"dev\":\"npm run copy:packagejson && tsc --watch\",\"build\":\"npm run copy:packagejson && npm run build:ts && npm run build:browser\",\"build:ts\":\"tsc\",\"build:browser\":\"browserify -t [ babelify ] dist/index.js | uglifyjs > authereum.js\",\"clean\":\"rm -rf dist\",\"copy:packagejson\":\"cp package.json src/package.json\",\"lint\":\"tslint --fix -c tslint.json src/*.ts src/**/*.ts src/**/**.ts\",\"publish-module\":\"npm publish --tag beta --access public\",\"dist-tag\":\"npm dist-tag add \\\"authereum@$(jq -r .version <package.json)\\\" latest\",\"bump\":\"lerna-sync-version\",\"release\":\"npm run clean && npm test && npm run publish-module\",\"release-dist\":\"npm run release && npm run dist-tag\",\"bump-release\":\"npm run bump && npm run release\",\"prepare\":\"npm run lint && npm run build\"},\"directories\":{},\"author\":\"\",\"license\":\"MIT\",\"dependencies\":{\"async\":\"^3.1.0\",\"ethereum-private-key-to-address\":\"0.0.3\",\"ethers\":\"^4.0.36\",\"eventemitter3\":\"^4.0.0\",\"is-buffer\":\"^2.0.4\",\"moment\":\"^2.24.0\",\"penpal\":\"^4.1.1\",\"pify\":\"^4.0.1\",\"querystring\":\"^0.2.0\",\"rollup-plugin-commonjs\":\"^10.1.0\",\"store\":\"^2.0.12\",\"to-hex\":\"0.0.11\",\"uuidv4\":\"^6.0.6\",\"web3-provider-engine\":\"^15.0.4\",\"web3-utils\":\"^1.2.1\"},\"devDependencies\":{\"@babel/cli\":\"^7.7.0\",\"@babel/core\":\"^7.7.2\",\"@babel/node\":\"^7.7.0\",\"@babel/plugin-transform-arrow-functions\":\"^7.2.0\",\"@babel/plugin-transform-runtime\":\"^7.6.2\",\"@babel/preset-env\":\"^7.8.3\",\"@babel/runtime\":\"^7.7.2\",\"@types/jest\":\"^24.0.15\",\"@types/node\":\"^12.11.7\",\"@typescript-eslint/eslint-plugin\":\"^1.9.0\",\"@typescript-eslint/parser\":\"^1.9.0\",\"babelify\":\"^10.0.0\",\"browserify\":\"^16.5.0\",\"jest\":\"^24.8.0\",\"lerna-sync-version\":\"0.0.3\",\"standard\":\"^12.0.1\",\"ts-jest\":\"^24.0.2\",\"tsc\":\"^1.20150623.0\",\"tsify\":\"^4.0.1\",\"tslint\":\"^5.18.0\",\"tslint-config-standard\":\"^8.0.1\",\"typescript\":\"^3.7.2\",\"uglify-es\":\"^3.3.9\",\"web3\":\"^1.2.1\"},\"standard\":{\"parser\":\"@typescript-eslint/parser\",\"plugins\":[\"@typescript-eslint/eslint-plugin\"]}}");
 
 /***/ }),
 /* 242 */
