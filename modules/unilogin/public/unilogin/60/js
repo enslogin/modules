@@ -149,7 +149,7 @@ module.exports = g;
     return new (e || (e = Promise))(function (o, i) {
       function s(t) {
         try {
-          c(r.next(t));
+          u(r.next(t));
         } catch (t) {
           i(t);
         }
@@ -157,19 +157,19 @@ module.exports = g;
 
       function a(t) {
         try {
-          c(r.throw(t));
+          u(r.throw(t));
         } catch (t) {
           i(t);
         }
       }
 
-      function c(t) {
+      function u(t) {
         t.done ? o(t.value) : new e(function (n) {
           n(t.value);
         }).then(s, a);
       }
 
-      c((r = r.apply(t, n || [])).next());
+      u((r = r.apply(t, n || [])).next());
     });
   }
 
@@ -303,7 +303,7 @@ module.exports = g;
       expected: "number"
     }]);
   },
-      c = function (t) {
+      u = function (t) {
     return function (n, e) {
       if ("object" != typeof n || null === n) return o.error([{
         path: e,
@@ -320,7 +320,7 @@ module.exports = g;
       return i.length > 0 ? o.error(i) : o.ok(r);
     };
   },
-      u = function (t) {
+      c = function (t) {
     return function (n, e) {
       return null == n ? o.ok(void 0) : t(n, e);
     };
@@ -402,17 +402,17 @@ module.exports = g;
       this.sendMessage(t);
     }, t;
   }(),
-      h = (l = [c({
+      h = (l = [u({
     protocolId: i("UNIVERSAL_LOGIN"),
     id: a,
     isRequest: i(!0),
     payload: o.ok
-  }), c({
+  }), u({
     protocolId: i("UNIVERSAL_LOGIN"),
     id: a,
     isRequest: i(!1),
-    error: u(o.ok),
-    response: u(o.ok)
+    error: c(o.ok),
+    response: c(o.ok)
   })], p = "RpcMessage", function (t, n) {
     if (0 === l.length) return o.ok(t);
 
@@ -707,6 +707,40 @@ module.exports = g;
           upstream: t
         };
       }(n)), e));
+    }, r.prototype.promisifyJsonRpcRequest = function (t) {
+      return n(this, void 0, void 0, function () {
+        var n = this;
+        return e(this, function (e) {
+          return [2, new Promise(function (e, r) {
+            return n.send(t, function (t, n) {
+              return t ? r(t) : e(n);
+            });
+          })];
+        });
+      });
+    }, r.prototype.handleBatchRequest = function (t, r) {
+      return n(this, void 0, void 0, function () {
+        var n,
+            o,
+            i = this;
+        return e(this, function (e) {
+          switch (e.label) {
+            case 0:
+              return e.trys.push([0, 2,, 3]), [4, Promise.all(t.map(function (t) {
+                return i.promisifyJsonRpcRequest(t);
+              }))];
+
+            case 1:
+              return n = e.sent(), r(void 0, n), [3, 3];
+
+            case 2:
+              return o = e.sent(), r(o, void 0), [3, 3];
+
+            case 3:
+              return [2];
+          }
+        });
+      });
     }, r.prototype.send = function (t, r) {
       return n(this, void 0, void 0, function () {
         return e(this, function (n) {
@@ -715,7 +749,7 @@ module.exports = g;
               return [4, this.waitUntilReady()];
 
             case 1:
-              return n.sent(), this.bridge.send(t, r), [2];
+              return n.sent(), Array.isArray(t) ? this.handleBatchRequest(t, r) : this.bridge.send(t, r), [2];
           }
         });
       });
@@ -732,14 +766,20 @@ module.exports = g;
         });
       });
     }, r.prototype.enable = function () {
-      var t = this;
-      return new Promise(function (n, e) {
-        return t.send({
-          id: 1,
-          jsonRpc: "2.0",
-          method: "eth_requestAccounts"
-        }, function (t, r) {
-          t ? e(t) : r.error ? e(r.error) : n(r.result);
+      return n(this, void 0, void 0, function () {
+        var t, n, r;
+        return e(this, function (e) {
+          switch (e.label) {
+            case 0:
+              return [4, this.promisifyJsonRpcRequest({
+                id: 1,
+                jsonRpc: "2.0",
+                method: "eth_requestAccounts"
+              })];
+
+            case 1:
+              return t = e.sent(), n = t.result, (r = t.error) ? [2, Promise.reject(r)] : [2, Promise.resolve(n)];
+          }
         });
       });
     }, r.prototype.setDashboardVisibility = function (t) {
