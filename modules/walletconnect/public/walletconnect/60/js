@@ -98,7 +98,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {const WalletConnectProvider = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */(function(global) {const WalletConnectProvider = __webpack_require__(2).default;
 
 global.provider = config => new Promise((resolve, reject) => {
   const provider = new WalletConnectProvider({
