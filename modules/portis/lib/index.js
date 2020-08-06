@@ -5,7 +5,7 @@ global.provider = (config) => new Promise((resolve, reject) => {
     config._portis ? config._portis.appId : '3269932e-25a4-4350-b543-e5e762acb9ae',
     config.provider.network
   )
-  portis.provider.disable       = portis.logout;
-  portis.provider.changeNetwork = portis.changeNetwork;
+  portis.provider.disable       = portis.logout.bind(portis);
+  portis.provider.changeNetwork = portis.changeNetwork.bind(portis);
   resolve(portis.provider)
 })
