@@ -53610,7 +53610,7 @@ var src = __webpack_require__(248);
 // EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/ethereum-private-key-to-address/index.js
 var ethereum_private_key_to_address = __webpack_require__(249);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/ethers/dist/ethers.min.js
+// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/ethers/dist/ethers.min.js
 var ethers_min = __webpack_require__(31);
 
 // EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/to-hex/index.js
@@ -53964,8 +53964,8 @@ class AuthereumProvider_AuthereumProvider extends web3_provider_engine_default.a
 
           try {
             currentMsg = JSON.stringify(msgParams);
-          } catch (err) {} // noop
-          // Throttle if the tx is identical
+          } catch (err) {// noop
+          } // Throttle if the tx is identical
 
 
           clearTimeout(this.lastMsgTimeout);
@@ -54096,8 +54096,8 @@ class AuthereumProvider_AuthereumProvider extends web3_provider_engine_default.a
 
           try {
             currentTypedMsg = JSON.stringify(msgParams);
-          } catch (err) {} // noop
-          // Throttle if the tx is identical
+          } catch (err) {// noop
+          } // Throttle if the tx is identical
 
 
           clearTimeout(this.lastTypedMsgTimeout);
@@ -63527,8 +63527,8 @@ class BaseBlockTracker extends SafeEventEmitter {
   _start() {// default behavior is noop
   }
 
-  _end() {} // default behavior is noop
-  //
+  _end() {// default behavior is noop
+  } //
   // private
   //
 

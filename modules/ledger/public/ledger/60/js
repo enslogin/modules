@@ -45779,8 +45779,8 @@ class BaseBlockTracker extends SafeEventEmitter {
   _start() {// default behavior is noop
   }
 
-  _end() {} // default behavior is noop
-  //
+  _end() {// default behavior is noop
+  } //
   // private
   //
 

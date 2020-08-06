@@ -15,7 +15,7 @@
     "export": "cp -r public/* --"
   },
   "dependencies": {
-    "@toruslabs/torus-embed": "^1.5.4",
+    "@toruslabs/torus-embed": "^1.8.2",
     "pump": "^3.0.0"
   },
   "devDependencies": {
