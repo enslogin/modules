@@ -12,7 +12,7 @@
     "bundle": "webpack",
     "build": "yarn bundle",
     "clean": "rm -r public/*",
-    "export": "cp -r public/* --"
+    "export": "cp -r public/*"
   },
   "dependencies": {
     "@ledgerhq/hw-transport-u2f": "^5.11.0",

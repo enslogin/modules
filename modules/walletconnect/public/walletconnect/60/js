@@ -66339,7 +66339,7 @@ __webpack_require__.d(__webpack_exports__, "Suspense", function() { return /* bi
 __webpack_require__.d(__webpack_exports__, "SuspenseList", function() { return /* binding */ O; });
 __webpack_require__.d(__webpack_exports__, "lazy", function() { return /* binding */ compat_module_L; });
 
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/preact/dist/preact.module.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/preact/dist/preact.module.js
 var preact_module_n,
     l,
     preact_module_u,
@@ -66691,7 +66691,7 @@ preact_module_n = {
   this.__v && (this.__e = !0, n && this.__h.push(n), g(this));
 }, m.prototype.render = d, preact_module_u = [], preact_module_i = 0, preact_module_t = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, preact_module_o = preact_module_e, f = 0;
 
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/preact/hooks/dist/hooks.module.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/preact/hooks/dist/hooks.module.js
 
 var hooks_module_t,
     hooks_module_u,
@@ -66855,7 +66855,7 @@ preact_module_n.__r = function (n) {
   }
 };
 
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/preact/compat/dist/compat.module.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/preact/compat/dist/compat.module.js
 
 
 

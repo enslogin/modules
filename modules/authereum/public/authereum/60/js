@@ -53551,80 +53551,80 @@ exports.encode = exports.stringify = __webpack_require__(422);
 
 // UNUSED EXPORTS: Authereum, AuthereumProvider, AuthereumSigner, version
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/penpal/lib/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/penpal/lib/index.js
 var lib = __webpack_require__(239);
 var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/eventemitter3/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/eventemitter3/index.js
 var eventemitter3 = __webpack_require__(240);
 var eventemitter3_default = /*#__PURE__*/__webpack_require__.n(eventemitter3);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/moment/moment.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/moment/moment.js
 var moment = __webpack_require__(0);
 var moment_default = /*#__PURE__*/__webpack_require__.n(moment);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/is-buffer/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/is-buffer/index.js
 var is_buffer = __webpack_require__(241);
 var is_buffer_default = /*#__PURE__*/__webpack_require__.n(is_buffer);
 
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/version.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/version.js
 /* harmony default export */ var version = ('0.0.4-beta.164');
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/async/waterfall.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/async/waterfall.js
 var waterfall = __webpack_require__(11);
 var waterfall_default = /*#__PURE__*/__webpack_require__.n(waterfall);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/ethereumjs-util/dist/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/ethereumjs-util/dist/index.js
 var dist = __webpack_require__(13);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/xtend/immutable.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/xtend/immutable.js
 var immutable = __webpack_require__(8);
 var immutable_default = /*#__PURE__*/__webpack_require__.n(immutable);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/index.js
 var web3_provider_engine = __webpack_require__(242);
 var web3_provider_engine_default = /*#__PURE__*/__webpack_require__.n(web3_provider_engine);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/hooked-wallet.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/hooked-wallet.js
 var hooked_wallet = __webpack_require__(243);
 var hooked_wallet_default = /*#__PURE__*/__webpack_require__.n(hooked_wallet);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/rpc.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/rpc.js
 var rpc = __webpack_require__(244);
 var rpc_default = /*#__PURE__*/__webpack_require__.n(rpc);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/subscriptions.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/subscriptions.js
 var subscriptions = __webpack_require__(245);
 var subscriptions_default = /*#__PURE__*/__webpack_require__.n(subscriptions);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/filters.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-provider-engine/subproviders/filters.js
 var filters = __webpack_require__(246);
 var filters_default = /*#__PURE__*/__webpack_require__.n(filters);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/pify/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/pify/index.js
 var pify = __webpack_require__(247);
 var pify_default = /*#__PURE__*/__webpack_require__.n(pify);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-utils/src/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/web3-utils/src/index.js
 var src = __webpack_require__(248);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/ethereum-private-key-to-address/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/ethereum-private-key-to-address/index.js
 var ethereum_private_key_to_address = __webpack_require__(249);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/ethers/dist/ethers.min.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/node_modules/ethers/dist/ethers.min.js
 var ethers_min = __webpack_require__(31);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/to-hex/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/to-hex/index.js
 var to_hex = __webpack_require__(250);
 var to_hex_default = /*#__PURE__*/__webpack_require__.n(to_hex);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/build/lib/uuidv4.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/build/lib/uuidv4.js
 var uuidv4 = __webpack_require__(251);
 
-// EXTERNAL MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/querystring-es3/index.js
+// EXTERNAL MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/querystring-es3/index.js
 var querystring_es3 = __webpack_require__(252);
 var querystring_es3_default = /*#__PURE__*/__webpack_require__.n(querystring_es3);
 
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/utils.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/utils.js
 var __awaiter = undefined && undefined.__awaiter || function (thisArg, _arguments, P, generator) {
   function adopt(value) {
     return value instanceof P ? value : new P(function (resolve) {
@@ -53827,7 +53827,7 @@ const browserInfo = () => {
     version: p[1]
   };
 };
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/AuthereumProvider.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/AuthereumProvider.js
 var AuthereumProvider_awaiter = undefined && undefined.__awaiter || function (thisArg, _arguments, P, generator) {
   function adopt(value) {
     return value instanceof P ? value : new P(function (resolve) {
@@ -54680,7 +54680,7 @@ function isValidHex(data) {
   const isValid = nonPrefixed.match(hexRegex);
   return isValid;
 }
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/config.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/config.js
 const tld = 'authereum.com';
 const defaultConfig = {
   xsUri(network) {
@@ -54689,7 +54689,7 @@ const defaultConfig = {
   }
 
 };
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/AuthereumSDK.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/AuthereumSDK.js
 var AuthereumSDK_awaiter = undefined && undefined.__awaiter || function (thisArg, _arguments, P, generator) {
   function adopt(value) {
     return value instanceof P ? value : new P(function (resolve) {
@@ -56205,7 +56205,7 @@ AuthereumSDK_Authereum.version = () => {
 if (typeof window !== 'undefined') {
   window.Authereum = AuthereumSDK_Authereum;
 }
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/AuthereumSigner.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/AuthereumSigner.js
 var AuthereumSigner_awaiter = undefined && undefined.__awaiter || function (thisArg, _arguments, P, generator) {
   function adopt(value) {
     return value instanceof P ? value : new P(function (resolve) {
@@ -56288,7 +56288,7 @@ class AuthereumSigner_AuthereumSigner extends ethers['Signer'] {
   }
 
 }
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/authereum/dist/index.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/authereum/dist/index.js
 
 
 
@@ -80278,7 +80278,7 @@ __webpack_require__.d(__webpack_exports__, "v3", function() { return /* reexport
 __webpack_require__.d(__webpack_exports__, "v4", function() { return /* reexport */ esm_browser_v4; });
 __webpack_require__.d(__webpack_exports__, "v5", function() { return /* reexport */ esm_browser_v5; });
 
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/rng.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/rng.js
 // Unique ID creation requires a high quality random # generator. In the browser we therefore
 // require the crypto API and do not support built-in fallback to lower quality random number
 // generators (like Math.random()).
@@ -80294,7 +80294,7 @@ function rng() {
 
   return getRandomValues(rnds8);
 }
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/bytesToUuid.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/bytesToUuid.js
 /**
  * Convert array of 16 byte values to UUID string format of the form:
  * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
@@ -80313,7 +80313,7 @@ function bytesToUuid(buf, offset) {
 }
 
 /* harmony default export */ var esm_browser_bytesToUuid = (bytesToUuid);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v1.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v1.js
 
  // **`v1()` - Generate time-based UUID**
 //
@@ -80409,7 +80409,7 @@ function v1(options, buf, offset) {
 }
 
 /* harmony default export */ var esm_browser_v1 = (v1);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v35.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v35.js
 
 
 function uuidToBytes(uuid) {
@@ -80466,7 +80466,7 @@ var URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
   generateUUID.URL = URL;
   return generateUUID;
 });
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/md5.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/md5.js
 /*
  * Browser-compatible JavaScript MD5
  *
@@ -80685,12 +80685,12 @@ function md5ii(a, b, c, d, x, s, t) {
 }
 
 /* harmony default export */ var esm_browser_md5 = (md5);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v3.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v3.js
 
 
 var v3 = v35('v3', 0x30, esm_browser_md5);
 /* harmony default export */ var esm_browser_v3 = (v3);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v4.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v4.js
 
 
 
@@ -80718,7 +80718,7 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ var esm_browser_v4 = (v4);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/sha1.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/sha1.js
 // Adapted from Chris Veness' SHA1 code at
 // http://www.movable-type.co.uk/scripts/sha1.html
 function f(s, x, y, z) {
@@ -80810,12 +80810,12 @@ function sha1(bytes) {
 }
 
 /* harmony default export */ var esm_browser_sha1 = (sha1);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v5.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/v5.js
 
 
 var v5 = v35('v5', 0x50, esm_browser_sha1);
 /* harmony default export */ var esm_browser_v5 = (v5);
-// CONCATENATED MODULE: /home/amxx/Work/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/index.js
+// CONCATENATED MODULE: /home/amxx/Work/Projects/ENSLogin/enslogin-modules/node_modules/uuidv4/node_modules/uuid/dist/esm-browser/index.js
 
 
 

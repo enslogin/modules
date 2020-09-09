@@ -12,7 +12,7 @@
     "bundle": "webpack",
     "build": "yarn bundle",
     "clean": "rm -r public/*",
-    "export": "cp -r public/* --"
+    "export": "cp -r public/*"
   },
   "dependencies": {
     "@walletconnect/web3-provider": "^1.1.0"

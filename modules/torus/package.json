@@ -12,7 +12,7 @@
     "bundle": "webpack",
     "build": "yarn bundle",
     "clean": "rm -r public/*",
-    "export": "cp -r public/* --"
+    "export": "cp -r public/*"
   },
   "dependencies": {
     "@toruslabs/torus-embed": "^1.8.2",
