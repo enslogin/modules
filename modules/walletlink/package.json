@@ -1,0 +1,27 @@
+{
+  "name": "@enslogin/module-walletlink",
+  "version": "0.0.4",
+  "author": "hadrien croubois",
+  "license": "MIT",
+  "files": [
+    "/lib",
+    "/public"
+  ],
+  "scripts": {
+    "publish": "npm publish",
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm -r public/*",
+    "export": "cp -r public/*"
+  },
+  "dependencies": {
+    "ethers": "^5.0.12",
+    "walletlink": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
