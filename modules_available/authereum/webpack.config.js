@@ -18,5 +18,10 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
+  },
+  resolve: {
+    fallback: {
+      stream: 'stream-browserify'
+    }
   }
 }

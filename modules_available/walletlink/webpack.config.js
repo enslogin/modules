@@ -18,5 +18,11 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
+  },
+  resolve: {
+    fallback: {
+      crypto: 'crypto-browserify',
+      stream: 'stream-browserify'
+    }
   }
 }

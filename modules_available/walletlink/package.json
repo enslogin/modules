@@ -1,5 +1,5 @@
 {
-  "name": "@enslogin/module-authereum",
+  "name": "@enslogin/module-walletlink",
   "version": "0.0.4",
   "author": "hadrien croubois",
   "license": "MIT",
@@ -15,13 +15,15 @@
     "export": "cp -r public/*"
   },
   "dependencies": {
-    "authereum": "^0.0.4-beta.164",
-    "toastr": "^2.1.4"
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^5.0.17",
+    "stream-browserify": "^3.0.0",
+    "walletlink": "^2.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.11.6",
     "babel-loader": "^8.1.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
   }
 }
