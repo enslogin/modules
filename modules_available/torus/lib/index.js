@@ -1,4 +1,4 @@
-const Torus = require('@toruslabs/torus-embed').default
+const Torus = require('@toruslabs/torus-embed')
 
 global.provider = (config) => new Promise((resolve, reject) => {
   const torus = new Torus()
