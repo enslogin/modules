@@ -1,0 +1,28 @@
+{
+  "name": "@enslogin/module-wip",
+  "version": "0.0.4",
+  "author": "hadrien croubois",
+  "license": "MIT",
+  "files": [
+    "/lib",
+    "/public"
+  ],
+  "scripts": {
+    "publish": "npm publish",
+    "bundle": "webpack",
+    "build": "yarn bundle",
+    "clean": "rm -r public/*",
+    "export": "cp -r public/*"
+  },
+  "dependencies": {
+    "authereum": "^0.1.0",
+    "stream-browserify": "^3.0.0",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "babel-loader": "^8.1.0",
+    "webpack": "^5.1.0",
+    "webpack-cli": "^4.0.0"
+  }
+}
