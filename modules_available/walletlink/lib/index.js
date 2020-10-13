@@ -1,5 +1,8 @@
-import WalletLink from 'walletlink'
-import ethers from 'ethers'
+global.Buffer = require('buffer').Buffer;
+global.process = require('process');
+
+const { WalletLink } = require('walletlink');
+const ethers = require('ethers');
 
 global.provider = (config) => new Promise((resolve, reject) => {
 	const walletLink = new WalletLink({ appName: 'ENSLogin' });
