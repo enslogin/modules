@@ -1,14 +1,13 @@
 #!/bin/bash
 
 CMD="ethers-ens --account $MNEMONIC1 --yes --wait"
-DEPLOYER="ipfs-deploy -O -p pinata"
 NETWORKS=("ropsten" "rinkeby" "goerli")
 KEYS=("enslogin" "enslogin-default")
+DEPLOYER="ipfs-deploy -O -p pinata"
 
 MODULES=$@
 [ -z "$MODULES" ] && MODULES=`ls public`
 
-#for module in `ls public`;
 for module in $MODULES;
 do
 	ipfshash=`$DEPLOYER public/$module 2> /dev/null`
