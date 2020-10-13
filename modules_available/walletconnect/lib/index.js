@@ -1,4 +1,7 @@
-const WalletConnectProvider = require('@walletconnect/web3-provider').default
+global.Buffer = require('buffer').Buffer;
+global.process = require('process');
+
+const WalletConnectProvider = require('@walletconnect/web3-provider').default;
 
 global.provider = (config) => new Promise((resolve, reject) => {
   const provider = new WalletConnectProvider({

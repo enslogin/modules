@@ -1,4 +1,7 @@
-import Authereum from 'authereum'
+global.Buffer = require('buffer').Buffer;
+global.process = require('process');
+
+const Authereum = require('authereum').default;
 
 global.provider = (config) => new Promise((resolve, reject) => {
   try {
