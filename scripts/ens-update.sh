@@ -6,11 +6,11 @@ KEYS=("enslogin" "enslogin-default")
 DEPLOYER="ipfs-deploy -O -p pinata"
 
 MODULES=$@
-[ -z "$MODULES" ] && MODULES=`ls public`
+[ -z "$MODULES" ] && MODULES=`ls modules_enabled/`
 
 for module in $MODULES;
 do
-	ipfshash=`$DEPLOYER public/$module 2> /dev/null`
+	ipfshash=`$DEPLOYER modules_enabled/$module/public/$module 2> /dev/null`
 
 	for network in "${NETWORKS[@]}";
 	do

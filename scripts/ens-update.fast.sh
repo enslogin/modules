@@ -5,11 +5,11 @@ NETWORKS=("ropsten" "rinkeby" "goerli")
 KEYS=("enslogin" "enslogin-default")
 
 MODULES=$@
-[ -z "$MODULES" ] && MODULES=`ls public`
+[ -z "$MODULES" ] && MODULES=`ls modules_enabled/`
 
 for module in $MODULES;
 do
-	rsync -azv public/$module hadriencroubois.com:/mnt/sata/http/shared/enslogin/.
+	rsync -avz modules_enabled/$module/public/$module hadriencroubois.com:/mnt/sata/http/shared/enslogin/.
 	httppath="https://shared.hadriencroubois.com/enslogin/$module"
 
 	# for network in "${NETWORKS[@]}";
