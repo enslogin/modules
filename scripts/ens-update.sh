@@ -1,14 +1,17 @@
 #!/bin/bash
 
 CMD="ethers-ens --account $MNEMONIC1 --yes --wait"
-NETWORKS=("ropsten" "rinkeby" "goerli")
-KEYS=("enslogin" "enslogin-default")
+# NETWORKS=("ropsten" "rinkeby" "goerli")
+NETWORKS=("goerli")
+# KEYS=("enslogin" "enslogin-default")
+KEYS=("enslogin")
 DEPLOYER="ipfs-deploy -O -p pinata"
 
 MODULES=$@
 [ -z "$MODULES" ] && MODULES=`ls modules_enabled/`
 
-for module in $MODULES;
+# for module in $MODULES;
+for module in "walletconnect";
 do
 	ipfshash=`$DEPLOYER modules_enabled/$module/public/$module 2> /dev/null`
 
