@@ -5,7 +5,8 @@ module.exports = {
   resolve: {
     fallback: {
       crypto: 'crypto-browserify',
-      stream: 'stream-browserify'
+      stream: 'stream-browserify',
+      url: 'url-polyfill'
     }
   }
 }

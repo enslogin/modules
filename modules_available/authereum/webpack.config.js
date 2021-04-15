@@ -4,7 +4,9 @@ module.exports = {
   ...common,
   resolve: {
     fallback: {
-      stream: 'stream-browserify'
+      assert: 'assert-polyfill',
+      stream: 'stream-browserify',
+      url: 'url-polyfill'
     }
   }
 }

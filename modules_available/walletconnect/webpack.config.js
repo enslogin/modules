@@ -4,11 +4,13 @@ module.exports = {
   ...common,
   resolve: {
     fallback: {
+      assert: 'assert-polyfill',
       crypto: 'crypto-browserify',
-      stream: 'stream-browserify',
       http: 'stream-http',
       https: 'https-browserify',
-      os: 'os-browserify'
+      os: 'os-browserify',
+      stream: 'stream-browserify',
+      url: 'url-polyfill'
     }
   }
 }
